@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: cyu4dVKlLvAXKz4CxzYZ+pKCMkUgd/vEqgllx8uRj+o2a1jesdWdbe0xWyS81vOr6VbA5cqGmUYdoQ8syYYMDf68uGAig025cwe9oW4WgYFj8UUZDvnsJGdsvQ/lgvAiiBcr79UauBElqhw9fczULoewRbccO0vvEjqUObdP6hODH8wyZV17Dz1KyZEzLO6rKLtw2MxqR0G1rsLC8yZdaDI3EZ16DocyWDtWuRoPhkCjvumrYfurfsUlfysixhLHKxi/02E5sMf0sZMIAMRrq59xMUDIMQHsh33F0DRDnWdb/E9uygjbqTlTjwOfDbm+VOskBkQdMZx+cRbhNcd1iopuRkSk4IuVhOalX4yJVQvqQch++64W8GVc7N0zGqQS0WO91XtG1Cu+pAuveYag47h+iTFg6qrjFt7kHgHdOZpCBxC6pkL5eHHFV09jArX16oIStsKEF7mnYbvD4O1mBqtoHhnPghL7mHuH6zz/yrsvIvCxWHMqWndTOBmbNUxybu+mUbeJTPGDhn2MQ0+HAlTVL1Hk+a3l0WAJak9pDnFV6KW3dKxzIXAxucdDErPlQtXrYiISGQM96DkgGtgz+14xRKWYlcAuUvvnLWhPSPEUHzWlF7ELUp7wJYHG9c0osapG/M698aBDfJYvpPrrdNJrSTyOa90Hreo1Y4Ggo1U=
+  app: calm-reaches-44304
+  on:
+    repo: thinkful-ei19/tom-restaurant-app-mongoose-testing
+    branch: feature/with-tests
